@@ -1,11 +1,11 @@
-#include <main.h>
+#include "main.h">
 #include <stdlib.h>
 
 /**
  * create_array - Entry point
  *@size: size of the array
  *@c: character
- * Return: a pointer to the array, Null if it fails
+ * Return: a pointer to the array, or NULL if it fails
  */
 char *create_array(unsigned int size, char c)
 {
@@ -24,4 +24,4 @@ char *create_array(unsigned int size, char c)
 		}
 	}
 	return (array);
-}
+

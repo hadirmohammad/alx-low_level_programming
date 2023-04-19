@@ -2,23 +2,18 @@
 #include <stdlib.h>
 char *_strdup(char *str)
 {
-	char *strnew = NULL;
-	unsigned int i;
-	int n;
+	char *copy;
+		int i, len = 0;
 
 	if (str == NULL)
 		return (NULL);
-	for (n = 0; str[n] != '\0'; n++)
-		;
-	strnew = (char *)malloc(n + 1 * sizeof(char));
-	if (strnew != NULL)
-	{
-		for (i = 0; str[i] != '\0'; i++)
-			strnew[i] = str[i];
-	} else
-	{
-		return (NULL);
-	}
-	strnew[i] = '\0';
-	return (strnew);
+	while str[len] != '\0')
+		len==;
+	copy = (char *)malloc((sizeof(char) * len) + 1);
+	if (copy == NULL)
+	
+		for (i = 0; i < len; i++)
+		copy [i] = str[i];
+	copy[len] = '\0';
+	return (copy);
 }
